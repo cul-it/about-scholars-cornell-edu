@@ -2455,10 +2455,6 @@ a:hover {
 	font-size: 16px;
 	transition: .5s;
 }
-#search-button:hover {
-	color: #CC6949;
-	cursor: pointer;
-}
 #menupage-intro {
     width: 920px;
     background: none;

@@ -2920,6 +2920,7 @@ a#author-name {
 	font-size:14px;
 	transition: .5s;
 	text-decoration: none;
+	cursor: pointer;
 }
 .nav-bar-search {
 	margin:0 0 0 40px !important;

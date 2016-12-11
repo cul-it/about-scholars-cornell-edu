@@ -2,14 +2,14 @@
 	box-sizing:border-box;
 }
 #nav-bar.homepage {
-	position: absolute;
-	bottom: 80px;
+	position: fixed;
+	bottom: 0;
 }
 .fixed {
 	position: fixed !important;
 	top: 0;
 }
-.pages span {
+.pages a {
 	color: #fff;
 }
 .pages a:hover {

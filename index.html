@@ -24,13 +24,13 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/scholars/themes/scholars/js/homePageUtils.js?version=x"></script>
 <script type="text/javascript" src="/scholars/themes/scholars/js/homeUtils.js"></script>        
-<script type="text/javascript" src="./javascripts/scholarsHomePage.js?version=x"></script>
+<script type="text/javascript" src="./javascripts/scholarsHomePageOFF.js?version=x"></script>
 
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Muli" />
 
     <body class="home" onload="">
-		<div id="home" class="page">
+		<div id="home" class="page" style="position:relative">
 <div id="logo-container" style="">
 	<img width="56%" src="./images/scholars_logo.png" />
 </div>
@@ -40,33 +40,34 @@
 	</ul>
 </div>
 			<div id="home-layer">
+					<img width="32%" src="./images/coming-soon.png" style="position:fixed;top:0;right:0">
+
+					<ul class="pages" style="position:fixed;top:375px;left:50px;width:59%;margin:4px 0 0 -12px;">
+						<li style="font-size:33px;line-height:40px;color:#fff;letter-spacing:2.8px">
+							<span style="color:#fff;background-color:rgba(39,56,84,.6);font-family:Arial, Helvetica, sans-serif;letter-spacing:2.8px">Discover the scholarly and creative work of Cornell's faculty and researchers.</span>
+						</li>
+					</ul>
+
 				<header>
 <div id="nav-bar" class="homepage" role="navigation" >
 	<div id="nav-bar-row"class="row">
-		<span id="nav-logo" class="ir" title="" style="display:none;">
-			<span><img src="./images/menu_logo.png"/></span>
-		</span>
 		 <nav id="nav-pages" class="pages" >
-			<ul>
-	            		<li role="listitem">
-							<span style="font-family:Arial, Helvetica, sans-serif;letter-spacing:2.8px" >
-								People
-							</span>
-						</li>
-	            		<li role="listitem">
-							<span style="font-family:Arial, Helvetica, sans-serif;letter-spacing:2.8px">
-								Academic Units
-							</span>
-						</li>
-	            		<li role="listitem">
-							<span style="font-family:Arial, Helvetica, sans-serif;letter-spacing:2.8px">
-								Research
-							</span>
-						</li>
-						<li class="nav-bar-search" >
-							<div id="search-button">
-								<i id="show-search" class="fa fa-search" aria-hidden="true"></i>
-							</div>
+			<ul style="list-style:inside;list-style-type:square;margin:-14px 0 0 0;margin-right:10px">
+	            		<li role="listitem" style="color:#fff">
+							<a href="./video.html" style="font-family:Arial, Helvetica, sans-serif;letter-spacing:2.8px" >
+								View a Scholars@Cornell demo
+							</a>
+						</li><br/>
+	            		<li role="listitem" class="pages" style="padding-top:2px;color:#fff">
+							<a href="http://ceur-ws.org/Vol-1704/paper7.pdf" target="_blank">
+								Read about Scholar's visualizations
+							</a>
+						</li><br/>
+	            		<li role="listitem" style="padding-top:2px;color:#fff">
+							<a href="https://twitter.com/ScholarsCornell" target="_blank" style="font-family:Arial, Helvetica, sans-serif;letter-spacing:2.8px">
+								Follow our progress on twitter
+								<img src="./images/twitter.jpeg" width="20px" style="vertical-align:middle;"/>
+							</a>
 						</li>
 			</ul>
 			<div id="search-container">
@@ -82,201 +83,6 @@
 
 				</header>
 			</div>
-			<div id="home-body" class="row">
-
-<div id="developerPanel" > </div>
-				<div id="discover-header" class="row fff-bkg">
-					<div class="col-sm-12 col-md-12 col-lg-12 e3e6e9-bkg">
-						<p class="home-header">
-							Discovery
-						</p>
-					</div>
-				</div>
-				<div class="container">
-					<div id="discover-content" class="row fff-bkg">
-						<div class="col-sm-4 col-md-4 col-lg-4">
-							<span class="image-links" >
-								<div id="domain-experts" class="image-link-div">
-									<div class="discovery-details">
-										<span>
-										Find a<br/>Domain Expert</span>
-									</div>
-								</div>
-							</span>
-							<div class="discovery-text-container">
-								<p class="discovery-text">Search by research interests, keywords, and affiliations.</p>
-							</div>
-						</div>
-						<div class="col-sm-4 col-md-4 col-lg-4">
-							<span class="image-links"  >
-								<div id="discover-scholarship" class="image-link-div">
-									<div class="discovery-details">
-										<span>Explore<br/>Cornell Scholarship</span>
-									</div>
-								</div>
-							</span>
-							<div class="discovery-text-container">
-								<p class="discovery-text">Search by subject area, and author affiliation.</p>
-							</div>		
-						</div>
-						<div class="col-sm-4 col-md-4 col-lg-4">
-							<span class="image-links"  >
-								<div id="ongoing-research" class="image-link-div">
-									<div class="discovery-details">
-										<span>Review<br/>Ongoing Research</span>
-									</div>
-								</div>
-							</span>
-							<div class="discovery-text-container">
-								<p class="discovery-text">Search by topic, investigator, and funding agency.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="visualize-header" class="row fff-bkg">
-					<div class="col-sm-12 col-md-12 col-lg-12 e3e6e9-bkg">
-						<p class="home-header">
-							Visualizations and Downloads
-						</p>
-					</div>
-				</div>
-				<div class="container">
-					<div id="visualize-content" class="row fff-bkg">
-						<div class="col-sm-3 col-md-3 col-lg-3"> 
-							<span id="person-to-sa" >
-								<img width="150px" src="./images/home-person-sa.png"/>
-							</span>
-							<div>
-								<p>Person to Subject Area</p>
-							</div>
-						</div>
-						<div class="col-sm-3 col-md-3 col-lg-3">
-							<span id="wordcloud_trigger" >
-								<img width="150px" src="./images/home-wordcloud.png"/>
-							</span>
-							<div>
-								<p>Keyword Cloud</p>
-							</div>
-						</div>
-						<div class="col-sm-3 col-md-3 col-lg-3"> 
-							<span id="collaborations_trigger" >
-								<img width="150px" src="./images/home-collaborations.png"/>
-							</span>
-							<div>
-								<p>Collaborations</p>
-							</div>
-						</div>
-						<div class="col-sm-3 col-md-3 col-lg-3">
-							<span >
-								<img width="150px" src="./images/home-grants.png"/>
-							</span>
-							<div>
-								<p>Research Grants</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="download-header" class="row fff-bkg">
-					<div class="col-sm-12 col-md-12 col-lg-12 e3e6e9-bkg">
-						<p class="home-header">
-							By the Numbers
-						</p>
-					</div>
-				</div>
-				<div class="container">
-		<div id="download-content" class="row fff-bkg">
-				<div class="col-sm-3 col-md-3 col-lg-3">
-					<span class="researcher-link" ><div id="researcher-count"><p>3,893</p></div></span>
-					<span class="researcher-link" ><div id="researcher-text"><p>Researchers</p></div></span>
-				</div>
-				<div class="col-sm-3 col-md-3 col-lg-3">
-					<span class="grant-link" ><div id="grant-count" ><p>1,477</p></div></span>
-					<span class="grant-link" ><div id="grant-text"><p>Grants</p></div></span>
-				</div>
-				<div class="col-sm-3 col-md-3 col-lg-3">
-					<span class="article-link" ><div id="article-count" ><p >12,143</p></div></span>
-					<span class="article-link" ><div id="article-text"><p>Articles</p></div></span>
-				</div>
-				<div class="col-sm-3 col-md-3 col-lg-3">
-					<span class="journal-link"><div id="journal-count" ><p>1,892</p></div></span>
-					<span class="journal-link"><div id="journal-text"><p>Journals</p></div></span>
-				</div>
-		</div>
-				</div>
-			</div> <!-- home-body div -->
-
-			<div id="site_collab_vis">
-				<span  id="collaborations_exporter" class="pull-right"><i class="fa fa-download" aria-hidden="true" title="export this data"></i></span>
-			</div>
-
-			<div id="site_wordcloud_vis">
-      	      <div id="wc-text-container">
-                <span class="text-primary" id="content"></span>
-              </div>
-              <div id="wcUniv">
-                <div id="wcUniv-container">
-                  <div>
-                    <span id="site_word_cloud_info" class="glyphicon glyphicon-info-sign pull-right" 
-                      data-toggle="tooltip" 
-                      data-original-title="The keyword cloud presents the top 300 keywords extracted from the journal articles published by Cornell faculty and researchers. <br> The size of each keyword in the cloud is directly proportional to the sum of the count of the faculty/researchers. <br> The bigger the keyword is in size, the more the faculty members and researcher used the term in their papers."
-                      data-placement="bottom"
-                      data-html="true" 
-                      data-viewport="#site_wordcloud_vis">
-                    </span>
-				  <span  ><i class="fa fa-download pull-right" aria-hidden="true" title="export this data"></i></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-<footer role="contentinfo">
-    <div class="row footer-row-one">
-		<div class="col-sm-6 col-md-6 col-lg-6">
-			<nav role="navigation">
-	            <ul class="footer-menu" role="list">
-	                <li role="listitem"><span title="terms of use">Terms of Use</span></li>
-					<li role="listitem">Powered by <a class="powered-by-vivo" href="http://vivoweb.org" target="_blank" title="powered by VIVO"><img src="./images/vivo-badge.png" width="40" height="21" alt="VIVO Badge" /></a></li>
-	            </ul>
-	        </nav>
-		</div>
-		<div class="col-sm-6 col-md-6 col-lg-6">
-        	<nav role="navigation">
-	            <ul id="footer-controls" class="footer-menu" role="list">
-	                
-	                <li role="listitem"><span  title="admin login">Administrators</span></li>
-	            </ul>
-	        </nav>
-		</div>
-    </div>
-    <div class="wrapper cul-footer">
-
-    <a href="https://www.library.cornell.edu/libraries">CORNELL UNIVERSITY LIBRARIES</a>
-	<a class="btn-give" href="http://alumni.library.cornell.edu/content/give-library">GIVE TO THE LIBRARY</a>
-    <nav>
-        <p><strong>Library Resources:</strong></p>
-        <ul>
-            <li><a href="https://www.library.cornell.edu/">Library Website / </a></li>
-            <li><a href="http://search.library.cornell.edu/">Search / </a></li>
-            <li><a href="http://newcatalog.library.cornell.edu/">Catalog / </a></li>
-            <li><a href="http://cornell.summon.serialssolutions.com/">Articles &amp; Full-Text / </a></li>
-            <li><a href="http://newcatalog.library.cornell.edu/databases">Databases /</a></li>
-            <li><a href="http://erms.library.cornell.edu/">E-journal Titles /</a></li>
-            <li><a href="https://www.library.cornell.edu/visual-resources">Images</a></li>
-
-        </ul>
-
-    </nav>
-
-    <p>&copy; 2016 Cornell University Library / <a href="tel:6072554144">(607) 255-4144 </a>  / <a href="https://www.library.cornell.edu/privacy">Privacy</a></p>
-
-    
-
-    </div>
-</footer>
-
-</footer>
 <script type="text/javascript" src="/scholars/js/jquery-ui/js/jquery-ui-1.8.9.custom.min.js"></script>
 
 
